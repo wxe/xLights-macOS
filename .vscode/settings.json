@@ -1,0 +1,39 @@
+{
+    "files.associations": {
+        "*.h": "cpp",
+        "*.cpp": "cpp"
+    },
+    "C_Cpp.default.configurationProvider": "ms-vscode.cpptools",
+    "C_Cpp.errorSquiggles": "enabled",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/bin": false,
+        "**/bin64": false,
+        "**/*.o": true,
+        "**/*.a": true,
+        "**/*.dylib": true
+    },
+    "search.exclude": {
+        "**/bin": true,
+        "**/bin64": true,
+        "**/build": true,
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/songs": true,
+        "**/xLights-macOS-dependencies-2025.13": true,
+        "**/../wxWidgets-xlights_2025.13": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/bin/**": true,
+        "**/bin64/**": true,
+        "**/build/**": true,
+        "**/xLights-macOS-dependencies-2025.13/**": true,
+        "**/../wxWidgets-xlights_2025.13/**": true
+    }
+}

@@ -1,0 +1,301 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build xLights (Debug)",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "xLights.xcodeproj",
+                "-scheme",
+                "xLights",
+                "-configuration",
+                "Debug",
+                "-derivedDataPath",
+                "${workspaceFolder}/build",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Build xLights (Release)",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "xLights.xcodeproj",
+                "-scheme",
+                "xLights",
+                "-configuration",
+                "Release",
+                "-derivedDataPath",
+                "${workspaceFolder}/build",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Clean xLights",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "xLights.xcodeproj",
+                "-scheme",
+                "xLights",
+                "-configuration",
+                "Debug",
+                "-derivedDataPath",
+                "${workspaceFolder}/build",
+                "clean"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Clean and Rebuild xLights (Debug)",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "xLights.xcodeproj",
+                "-scheme",
+                "xLights",
+                "-configuration",
+                "Debug",
+                "-derivedDataPath",
+                "${workspaceFolder}/build",
+                "clean",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Deep Clean (Remove build/)",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceFolder}/build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Build xLights-macOSLib (Debug)",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "xLights.xcodeproj",
+                "-scheme",
+                "xLights-macOSLib",
+                "-configuration",
+                "Debug",
+                "-derivedDataPath",
+                "${workspaceFolder}/build",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Build EffectComputeFunctions (Debug)",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "xLights.xcodeproj",
+                "-scheme",
+                "EffectComputeFunctions",
+                "-configuration",
+                "Debug",
+                "-derivedDataPath",
+                "${workspaceFolder}/build",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Build All Targets (Debug)",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "xLights.xcodeproj",
+                "-alltargets",
+                "-configuration",
+                "Debug",
+                "-derivedDataPath",
+                "${workspaceFolder}/build",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        },
+        {
+            "label": "Archive xLights",
+            "type": "shell",
+            "command": "xcodebuild",
+            "args": [
+                "-project",
+                "xLights.xcodeproj",
+                "-scheme",
+                "xLights",
+                "-configuration",
+                "Archive",
+                "-derivedDataPath",
+                "${workspaceFolder}/build",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": ["relative", "${workspaceFolder}"],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ]
+}
